@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 export default function ScriptsPage() {
-  const categories = [...new Set(scripts.map(s => s.category))]
+  const categories = Array.from(new Set(scripts.map(s => s.category)))
 
   return (
     <div className="pt-24 pb-16">
