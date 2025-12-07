@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --primary: #0a0a0a;
+  --secondary: #1c1c1c;
+  --accent: #00eaff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.glow {
+  text-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent);
+}
+
+.card-glow {
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.1);
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 30px rgba(0, 234, 255, 0.2);
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(135deg, #1c1c1c 0%, #0a0a0a 100%);
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #00eaff 0%, transparent 50%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}

@@ -1,0 +1,378 @@
+Absolutely. Below is a **complete, production-ready development specification** written exactly in the format Replit / AI agents understand.
+
+Copy-paste this into Replit **as system instructions or project spec** and it should build your website end-to-end.
+
+---
+
+# 📄 GODOT MULTIPLAYER ENGINE – WEBSITE DEVELOPMENT SPECIFICATION
+
+*(For AI website generation – Replit/Netlify/Github/Supabase)*
+
+---
+
+# 🔥 PROJECT GOAL
+
+Build a marketing + selling website for **Godot Multiplayer Systems & Addons** where I can:
+
+* Sell addons
+* Sell customizable scripts
+* Sell mini courses
+* Promote YouTube tutorials
+* Collect emails
+* Accept payments
+* Showcase demos
+* SEO optimize pages
+* Publish without backend servers (supabase only)
+
+Primary goal = **convert visitors into paying users**.
+
+Target audience = **Godot developers (Beginners + Intermediate), especially Indians**.
+
+---
+
+# 💡 Tech Stack (Required)
+
+**Frontend**
+
+* Next.js (latest)
+* React
+* Tailwind CSS
+* Shadcn UI optional
+* TypeScript required
+* Must support SEO meta tags
+
+**Backend**
+
+* Supabase (Auth, DB storage, email list)
+
+**Payments**
+
+* LemonSqueezy or Gumroad embed script (use Gumroad initially, switch later)
+
+**Deployment**
+
+* Github + Netlify (auto deploy on commit)
+
+---
+
+# 🧱 PAGES REQUIRED
+
+## 1. Home (main landing page)
+
+Sections:
+
+* Hero section (headline + CTA)
+* Why Godot Multiplayer is hard
+* What my systems solve
+* Features showcase
+* Addon previews
+* Mini courses preview
+* Testimonials (fake placeholders)
+* Newsletter form (supabase)
+* CTA “Browse Addons”
+
+SEO keywords:
+
+* godot multiplayer
+* godot addons
+* godot scripts
+* godot marketplace
+* godot online game
+* godot networking
+
+---
+
+## 2. Addons Page (catalog)
+
+Grid layout listing addons:
+
+* image
+* name
+* short description
+* price
+* “View Details” button
+
+---
+
+## 3. Addon Product Page (individual)
+
+Sections:
+
+* Product name
+* Hero screenshot
+* Demo video embed (YouTube)
+* Features
+* Works with Godot 4.4+
+* Installation guide
+* What’s included
+* Version history
+* Support info
+* Gumroad embed purchase button
+
+---
+
+## 4. Courses Page
+
+Show mini-courses/cards
+
+* Multiplayer basics
+* AI systems
+* Inventory systems
+* Weapon systems
+* Character movement
+* Export to android
+* Etc.
+
+Each card => course detail page
+
+---
+
+## 5. Scripts Page
+
+Ready-made scripts list:
+
+* Weapon System
+* AI System
+* Inventory System
+* Networking RPC
+* Vehicle Sync
+* Supabase Auth
+* Character Selection
+* Shrinking Zone / Battle Royale
+* Throwables
+
+---
+
+## 6. Customizable Scripts Page
+
+Higher pricing
+
+* Full Multiplayer Framework
+* Complete Weapon System
+* Complete AI Pack
+* Complete Multiplayer Car System
+* Supabase Login System
+
+---
+
+## 7. Contact Page
+
+Contact form → Supabase table:
+Fields:
+
+* name
+* email
+* message
+
+Also add:
+
+* email
+* Discord link
+* YouTube link
+
+---
+
+## 8. “Creator / About Me” Page (not in menu)
+
+Explain:
+
+* who I am
+* what I build
+* why Godot
+* linked to portfolio + YT
+
+Not in main menu but accessible via footer link.
+
+---
+
+# 📌 REQUIRED FEATURES
+
+## Authentication
+
+* Supabase email sign up
+* Supabase email login
+* Google login optional
+* Store buyer info after payment
+
+---
+
+## Newsletter signup
+
+* Input field → Supabase table “subscribers”
+  Fields:
+* email
+* created_at
+
+---
+
+## Purchase flow
+
+* Gumroad embed button
+* After payment → redirect to /download (or Gumroad page)
+
+---
+
+# 📦 DATA MODEL (Supabase)
+
+### subscribers
+
+* id UUID
+* email text
+* created_at timestamp
+
+### messages (contact form)
+
+* id UUID
+* name text
+* email text
+* message text
+* created_at timestamp
+
+### customers (optional future)
+
+* id
+* email
+* product
+* payment_reference
+
+---
+
+# 🎯 SEO Requirements
+
+Each page must include:
+
+* title
+* meta description
+* keywords
+* OG tags
+* JSON+LD structured data
+
+---
+
+# 🎨 UI Requirements
+
+Theme: dark + neon gaming
+Color palette:
+
+* #0a0a0a
+* #1c1c1c
+* accent #00eaff
+
+Design mood:
+
+* Futuristic tech
+* Minimal
+* Dev friendly
+
+Typography:
+
+* Inter
+* Console/mono for code sections
+
+---
+
+# 🎬 HOMEPAGE CONTENT (copy/paste text)
+
+### Hero Title
+
+**Godot Multiplayer Engine & Systems**
+
+### Subtitle
+
+Ready-made multiplayer systems, AI enemies, vehicle sync, Supabase login, weapon modules, and more. Build online games faster.
+
+### CTA Button
+
+“Browse Addons”
+
+### Section:
+
+> Multiplayer in Godot is HARD.
+> We make it plug-and-play.
+
+### What You Get
+
+* Fully synced multiplayer
+* Battle royale systems
+* Weapon systems
+* AI enemies
+* Vehicles with passenger sync
+* Auth/character selection
+* Inventory systems
+* Mobile ready UI
+* Zerotier networking
+
+### CTA
+
+“Start Now”
+
+---
+
+# 🧠 FUTURE EXPANSION PREP
+
+The system must support easy future additions:
+
+* blog
+* testimonials
+* affiliate links
+* YouTube video embeds
+* auto deploy
+
+---
+
+# 🛠 DEVELOPMENT TASK LIST (step-by-step)
+
+1. Generate Next.js project
+2. Install Tailwind
+3. Add pages folder structure
+4. Setup Supabase client
+5. Add email + contact forms
+6. Add Gumroad embed
+7. Create homepage components
+8. Create product page template
+9. Implement SEO tags
+10. Deploy to Netlify
+11. Connect domain later (optional)
+
+---
+
+# 💰 BUSINESS GOAL
+
+Primary income:
+
+* Addons
+* Customizable scripts
+* Mini courses
+
+Secondary:
+
+* Tutorials help promotion
+* Build mailing list
+* Sell within 30 days
+
+---
+
+# 🤖 FINAL INSTRUCTIONS FOR REPLIT AI
+
+Build a functional production-ready website following the above specification.
+Use clean modular components, SEO optimization, and responsive layouts.
+Deploy automatically using Github → Netlify pipeline.
+Use Supabase as database + auth provider.
+
+---
+
+# END OF SPEC DOCUMENT ✔
+
+---
+
+### Ready for next step?
+
+If you want, I will also provide:
+✅ full homepage copy
+✅ product page copy
+✅ mini course titles
+✅ addon descriptions
+✅ pricing strategy
+✅ launch marketing plan
+
+Just say: **“Give me product page content”**
